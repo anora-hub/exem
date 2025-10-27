@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
     <header class="fixed w-[100%] flex top-0">
-        <div
-            class=" container  mx-auto mt-[10px]  px-[20px]  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
+        <div class=" container  mx-auto mt-[10px]  px-[20px]  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
             <img src="./images/rasm1.png" alt="">
             <h1 class="text-[27px] text-[black]">Северяночка</h1>
             <div class=" hidden xl:flex items-center gap-[30px]">
-                <button
-                    class="bg-green-500 text-white px-5 py-2 rounded-lg text-lg hover:bg-green-600 flex items-center gap-2">
-                    <span>☰</span>
-                    <span>Каталог</span>
-                </button>
-
+                <a href="./katalog.html">
+                    <button
+                        class="bg-green-500 text-white px-5 py-2 rounded-lg text-lg hover:bg-green-600 flex items-center gap-2">
+                        <span>☰</span>
+                        <span>Каталог</span>
+                    </button>
+                </a>
                 <input type="text" placeholder="Найти товар"
                     class="border border-green-500 rounded-lg px-10 py-2 w-64 outline-none  focus:ring-green-400 bg-[url('rasm.png')] bg-no-repeat bg-right-3 bg-center" />
                 <div>
@@ -32,7 +33,9 @@
                     <h4>продукты</h4>
                 </div>
                 <div>
-                    <img class="items-center" src="./images/rasm3.png" alt="">
+                    <a href="./karzinka.html">
+                        <img class="items-center" src="./images/rasm3.png" alt="">
+                    </a>
                     <h4>Корзина</h4>
                 </div>
                 <img src="./images/rasm4.png" alt="">
@@ -41,10 +44,12 @@
             </div>
         </div>
     </header>
+
     <main>
         <section class="bg-center flex items-center   bg-cover mt-[80px]"
             style="background-image: url('./images/katta\ rasm.png')   ">
-            <div class=" container  max-w-[1208px]  mx-auto flex-wrap  pb-[20px] px-[20px] flex justify-center items-center ">
+            <div
+                class=" container  max-w-[1208px]  mx-auto flex-wrap  pb-[20px] px-[20px] flex justify-center items-center ">
                 <img class="pt-[20px] pb-[20px]" src="./images/img (5).png " alt="">
                 <h2 class="text-3xl font-bold text-gray-800">
                     Доставка бесплатно от <span class="text-green-600">1000₽</span>
@@ -354,7 +359,8 @@
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
-            <div class="container pt-[40px]  justify-center gap-[20px] grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1208px] mx-auto">
+            <div
+                class="container pt-[40px]  justify-center gap-[20px] grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1208px] mx-auto">
 
                 <div class=" flex justify-between  bg-[#FCD5BA] max-w-[548px]">
                     <div class=" pt-[40px] pl-[10px]">
@@ -381,9 +387,9 @@
 
         </section>
         <section class="bg-[#FBF8EC]">
-            <div class="container max-w-[1208px] mx-auto p-[10px]">
+            <div class="container  max-w-[1208px] mx-auto p-[10px]">
                 <h1 class=" text-[40px]">Наши магазины</h1>
-                <div>
+                <div class=" grid grid-cols-4 gap-[30px] flex-wrap">
                     <button
                         class="bg-green-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-green-700 active:scale-95 transition">
                         п.Щельяюр
@@ -428,7 +434,7 @@
                     <h1 class="text-[21px] font-[500] pt-[5px]">Весеннее настроение для каждой</h1>
                     <p>8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и
                         праздничных тёплых
-                        пожеланий. </p>
+                        пожеланий.</p>
                     <button
                         class=" text-[green] ml-[30px] border text-[#E5FFDE]  mt-[80px] rounded-lg text-[#E5FFDE] border-#E5FFDE-500 max-w-[150px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[green]  hover:text-[white]">
                         Подробнее
@@ -451,8 +457,9 @@
             </div>
         </section>
     </main>
-    <footer >
-        <div class=" container max-w-[1208px] mx-auto    flex flex-col md:flex-row justify-between items-center gap-4">      
+
+    <footer>
+        <div class=" container max-w-[1208px] mx-auto    flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-600">
                 <img src="./images/rasm1.png" alt="Logo" class="w-12 h-12 object-contain">
                 <ul class="flex flex-wrap justify-center md:justify-start gap-3">
@@ -462,7 +469,7 @@
                     <li><a href="#" class="hover:text-green-600">Статьи</a></li>
                     <li><a href="#" class="hover:text-green-600">Политика обработки данных</a></li>
                 </ul>
-            </div>        
+            </div>
             <div class="flex flex-col md:flex-row items-center gap-4 text-gray-700 text-sm">
                 <div class="flex gap-3 text-xl">
                     <img src="./images/1.png" alt="">
@@ -473,11 +480,11 @@
                 <p class="font-medium">8 800 777 33 35</p>
             </div>
         </div>
-    
-       
+
+
     </footer>
-    
-    
+
+
 </body>
 
 </html>
