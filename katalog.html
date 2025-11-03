@@ -10,14 +10,14 @@
 
 <body>
 
-    <header class="fixed w-[100%] flex top-0 bg-[white] z-[2] ">
+    <header class="fixed w-[100%] flex top-0  pb-[10px] z-10    bg-[white]">
         <div
-            class=" container  mx-auto mt-[10px] bg-[white]  px-[20px]  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
-            <a href="./index.html">
-                <img src="./images/rasm1.png" alt="">
-            </a>
-            <h1 class="text-[27px] text-[black]">Северяночка</h1>
+            class=" container  mx-auto mt-[10px]    px-[20px] relative  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
 
+            <img src="./images/rasm1.png" alt="">
+            <a href="./index.html">
+                <h1 class="text-[27px] text-[black]">Северяночка</h1>
+            </a>
             <div class=" hidden xl:flex items-center gap-[30px]">
                 <a href="./katalog.html">
                     <button
@@ -26,25 +26,44 @@
                         <span>Каталог</span>
                     </button>
                 </a>
-                <input type="text" placeholder="Найти товар"
-                    class="border border-green-500 rounded-lg px-10 py-2 w-64 outline-none  focus:ring-green-400 bg-[url('rasm.png')] bg-no-repeat bg-right-3 bg-center" />
-                <div>
-                    <img class="items-center" src="./images/rasm2.png" alt="">
-                    <h4>Избранное</h4>
+                <div class=" relative">
+                    <div
+                        class="flex items-center border border-green-300 rounded-lg px-10 py-2 bg-white max-w-[500px] w-full max-w-lg shadow-sm">
+                        <input id="input" type="text" placeholder="Найти товар"
+                            class="flex-1 outline-none text-sm text-gray-700 w-[400px]  placeholder-gray-400" />
+
+                    </div>
+                    <div id="search-cards"
+                        class="w-full hidden  overflow-y-scroll flex flex-col gap-[10px] top-[60px] absolute  max-h-[300px] bg-[white] shadow-lg rounded-[20px] p-[20px] ">
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="flex relative inline-block ml-[30px]  ">
+                        <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
+                        <p id="like-badge"
+                            class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                            0</p>
+                    </div>
+                    <h4 id=" ">Избранное</h4>
                 </div>
                 <div>
-                    <img class="items-center" src="./images/rasm2.png" alt="">
+                    <img class="ml-[24px]" src="./images/kubik.png" alt="">
                     <h4>продукты</h4>
                 </div>
                 <div>
                     <a href="./karzinka.html">
-                        <img class="items-center" src="./images/rasm3.png" alt="">
+                        <div class=" flex relative inline-block ml-[10px] ">
+                            <img class="  object-cover rounded-lg   " src="./images/rasm3.png" alt="">
+                            <p id="badge"
+                                class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                                0</p>
+                        </div>
                     </a>
                     <h4>Корзина</h4>
                 </div>
                 <img src="./images/rasm4.png" alt="">
                 <h1>Алексей</h1>
-                <h1>^</h1>
+                <img src="./images/chiziq.png" alt="">
             </div>
         </div>
     </header>
@@ -71,88 +90,102 @@
             </div>
         </section>
 
-       
+
         <section class="bg-[#FBF8EC]">
-            <div class="container pt-[30px]    max-w-[1208px] mx-auto px-[20px] flex gap-[20px]">
+            <div
+                class="container pt-[30px]    max-w-[1208px] mx-auto px-[20px] flex  items-center flex-col xl:flex-row gap-[30px]">
                 <div class=" relative group max-w-[575px] h-[200px]">
                     <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Молоко, сыр,
                         яйцо</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (20).png" alt="">
+                    <img class="w-full h-full object-cover  object-cover rounded-lg col-span-2 row-span-2 "
+                        src="./images/img (20).png" alt="">
                     <div
                         class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
                     </div>
                 </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Хлеб</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (21).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                <div class=" flex flex-col md:flex-row gap-[30px]">
+                    <div class=" relative  group max-w-[272px] h-full">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Хлеб</h1>
+                        <img class=" w-full h-full r rounded-lg" src="./images/img (21).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
                     </div>
-                </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Фрукты и овощи
-                    </h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (22).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="bg-[#FBF8EC]">
-            <div class="container pt-[30px]    max-w-[1208px] mx-auto px-[20px] flex gap-[20px]">
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Замороженные
-                        продукты</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (24).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
-                    </div>
-                </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Напитки</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (25).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
-                    </div>
-                </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Кондитерские
-                        изделия</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (26).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
-                    </div>
-                </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Чай, кофе</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (27).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                    <div class=" relative  group max-w-[272px] h-full">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Фрукты и
+                            овощи
+                        </h1>
+                        <img class="w-full h-full object-cover rounded-lg" src="./images/img (22).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-      
+
+
         <section class="bg-[#FBF8EC]">
-            <div class="container pt-[30px] flex justify-between    max-w-[1208px] mx-auto pl-[20px] pr-[20px]">
-        
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Бакалея</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (28).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+            <div
+                class="container pt-[30px] items-center   max-w-[1208px] mx-auto px-[20px]  flex flex-col xl:flex-row gap-[25px]">
+                <div class=" flex flex-col md:flex-row gap-[25px]">
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Замороженные
+                            продукты</h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (24).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
+                    </div>
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Напитки</h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (25).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
                     </div>
                 </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Здоровое питание
-                    </h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (29).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                <div class=" flex flex-col md:flex-row  gap-[25px]">
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Кондитерские
+                            изделия</h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (26).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
+                    </div>
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Чай, кофе
+                        </h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (27).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-[#FBF8EC]">
+            <div
+                class="container pt-[30px] flex flex-col xl:flex-row gap-[30px] items-center   max-w-[1208px] mx-auto pl-[20px] pr-[20px]">
+                <div class=" flex flex-col md:flex-row gap-[30px]">
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Бакалея</h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (28).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
+                    </div>
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Здоровое
+                            питание
+                        </h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (29).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
                     </div>
                 </div>
                 <div class=" relative group max-w-[575px] h-[200px]">
@@ -164,17 +197,10 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="bg-[#FBF8EC]">
-            <div class="container pt-[30px] flex justify-between mb-[30px]   max-w-[1208px] mx-auto pl-[20px] pr-[20px]">
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Детское питание
-                    </h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (31).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
-                    </div>
-                </div>
+            <div
+                class="container pt-[30px] flex gap-[30px] mb-[30px]  flex flex-col xl:flex-row  items-center max-w-[1208px] mx-auto pl-[20px] pr-[20px]">
                 <div class=" relative group max-w-[575px] h-[200px]">
                     <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Мясо, птица,
                         колбаса</h1>
@@ -183,14 +209,27 @@
                         class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
                     </div>
                 </div>
-                <div class=" relative group max-w-[272px] h-[200px]">
-                    <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">
-                        Непродовольственные товары</h1>
-                    <img class="w-full h-full object-cover rounded-xl" src="./images/img (33).png" alt="">
-                    <div
-                        class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                <div class=" flex flex-col md:flex-row gap-[30px]">
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">Детское
+                            питание
+                        </h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (31).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
+                    </div>
+
+                    <div class=" relative group max-w-[272px] h-[200px]">
+                        <h1 class="text-white z-1 font-bold text-[18px] absolute bottom-[30px] left-[30px]">
+                            Непродовольственные товары</h1>
+                        <img class="w-full h-full object-cover rounded-xl" src="./images/img (33).png" alt="">
+                        <div
+                            class=" absolute top-0 left-0 bg-linear-to-b from-[green]/10 group-hover:to-[red]/80     to-[green]/80  w-full h-full">
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 

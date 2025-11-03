@@ -9,12 +9,14 @@
 </head>
 
 <body>
-<header class="fixed w-[100%] flex top-0">
-    <div class=" container  mx-auto mt-[10px]  px-[20px]  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
-        <a href="./index.html">
-        <img src="./images/rasm1.png" alt="">
-        </a>
-        <h1 class="text-[27px] text-[black]">Северяночка</h1>
+<header class="fixed w-[100%] flex top-0  pb-[10px] z-10    bg-[white]">
+    <div
+        class=" container  mx-auto mt-[10px]    px-[20px] relative  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
+      
+            <img src="./images/rasm1.png" alt="">
+            <a class="" href="./index.html">
+            <h1 class="text-[27px] text-[black]">Северяночка</h1>
+    </a>
         <div class=" hidden xl:flex items-center gap-[30px]">
             <a href="./katalog.html">
                 <button
@@ -23,25 +25,44 @@
                     <span>Каталог</span>
                 </button>
             </a>
-            <input type="text" placeholder="Найти товар"
-                class="border border-green-500 rounded-lg px-10 py-2 w-64 outline-none  focus:ring-green-400 bg-[url('rasm.png')] bg-no-repeat bg-right-3 bg-center" />
-            <div>
-                <img class="items-center" src="./images/rasm2.png" alt="">
-                <h4>Избранное</h4>
+            <div class=" relative">
+                <div
+                    class="flex items-center border border-green-300 rounded-lg px-10 py-2 bg-white max-w-[500px] w-full max-w-lg shadow-sm">
+                    <input id="input" type="text" placeholder="Найти товар"
+                        class="flex-1 outline-none text-sm text-gray-700 w-[400px]  placeholder-gray-400" />
+
+                </div>
+                <div id="search-cards"
+                    class="w-full hidden  overflow-y-scroll flex flex-col gap-[10px] top-[60px] absolute  max-h-[300px] bg-[white] shadow-lg rounded-[20px] p-[20px] ">
+                </div>
+            </div>
+            <div class=" ">
+                <div class="flex relative inline-block ml-[30px]  ">
+                    <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
+                    <p id="like-badge"
+                        class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                        0</p>
+                </div>
+                <h4 id=" ">Избранное</h4>
             </div>
             <div>
-                <img class="items-center" src="./images/rasm2.png" alt="">
+                <img class="ml-[24px]" src="./images/kubik.png" alt="">
                 <h4>продукты</h4>
             </div>
             <div>
                 <a href="./karzinka.html">
-                    <img class="items-center" src="./images/rasm3.png" alt="">
+                    <div class=" flex relative inline-block ml-[10px] ">
+                        <img class="  object-cover rounded-lg   " src="./images/rasm3.png" alt="">
+                        <p id="badge"
+                            class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                            0</p>
+                    </div>
                 </a>
                 <h4>Корзина</h4>
             </div>
             <img src="./images/rasm4.png" alt="">
             <h1>Алексей</h1>
-            <h1>^</h1>
+            <img src="./images/chiziq.png" alt="">
         </div>
     </div>
 </header>
@@ -52,7 +73,7 @@
                 <p class="text-[#414141] ml-[10px] ">
                     Главная
                 </p>
-                <img src="./images/7rasm.png" alt="">
+                <img src="./images/kar1.png" alt="">
                 <p class="text-[#414141]">
                     Корзина
                 </p>
@@ -61,13 +82,13 @@
         <section class="bg-[#FBF8EC]">
             <div class="container  flex items-center   max-w-[1208px] mx-auto  ">
                 <h1 class="text-[70px] font-[600] pt-[60px] ml-[10px]">Корзина</h1>
-                <img src="./images/8rasm.png" alt="">
+                <img src="./images/kar2.png" alt="">
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
-            <div class="container pb-[30px]  flex ml-[10px]  gap-[20px] max-w-[1208px] mx-auto">
+            <div class="container max-w-[1208px] mx-auto flex gap-[10px]  >
 
-                <img src="./images/minus.png" alt="">
+                <img src="." alt="">
                 <p class="text-[#606060]">Выделить всё</p>
                 <p class="text-[#FF6633]">Удалить выбранные</p>
             </div>
@@ -75,12 +96,12 @@
         <section class="bg-[#FBF8EC]">
             <div
                 class=" container max-w-[1208px] mx-auto  flex justify-center items-center pb-[30px] gap-[30px]  flex-col xl:flex-row justify-between   ">
-                <div class=" ">
-                    <div class=" flex-col md:flex-row  md:w-[876px] w-[280px] h-[150px]    md:h-[72px]   border-gray-400 p-4 shadow-[0_0_10px_rgba(0,0,0,0.3)] bg-[white] items-center flex      
+                <div class="     ">
+                    <div class=" flex-col md:flex-row   md:w-[876px] w-[280px] h-[150px]    md:h-[72px]   border-gray-400 p-4 shadow-[0_0_10px_rgba(0,0,0,0.3)] bg-[white] items-center flex      
                     max-w-[876px] justify-between">
                         <div class="flex items-center gap-[10px]   ">
                             <div>
-                                <img class="" src="./images/9rasm.png" alt="">
+                                <img class="" src="./images/kar4.png" alt="">
                             </div>
                             <div>
                                 <h2 class=" text-[10px] md:text-[17px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
@@ -107,7 +128,7 @@
                         class=" flex-col md:flex-row  md:w-[876px] w-[280px] h-[150px]    md:h-[72px] mt-[30px]  border-gray-400 mt-[30pxpx]  p-4 shadow-[0_0_10px_rgba(0,0,0,0.3)]  bg-[white]      items-center  flex   h-[90px] max-w-[876px]    justify-between">
                         <div class="flex items-center gap-[10px]   ">
                             <div>
-                                <img src="./images/9rasm.png" alt="">
+                                <img src="./images/kar4.png" alt="">
                             </div>
 
                             <div>
@@ -150,7 +171,7 @@
                     max-w-[876px] justify-between">
                         <div class="flex items-center gap-[10px]   ">
                             <div>
-                                <img class="" src="./images/9rasm.png" alt="">
+                                <img class="" src="./images/kar4.png" alt="">
                             </div>
                             <div>
                                 <h2 class=" text-[10px] md:text-[17px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
@@ -176,7 +197,7 @@
                                         max-w-[876px] justify-between">
                         <div class="flex items-center gap-[10px]   ">
                             <div>
-                                <img class="" src="./images/9rasm.png" alt="">
+                                <img class="" src="./images/kar4.png" alt="">
                             </div>
                             <div>
                                 <h2 class=" text-[10px] md:text-[17px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
@@ -197,13 +218,13 @@
 
                 <div>
                     <div class="flex gap-[15px] pt-[px] ">
-                        <img src="./images/12rasm.png" alt="">
+                        <img src="./images/kar5.png" alt="">
                         <h1 class="text-[#414141]">Списать 200 ₽</h1>
                     </div>
                     <div class="pb-[20px] pt-[20px]">
                         <p class="text-[#8F8F8F]">На карте накоплено 200 ₽</p>
                     </div>
-                    <img src="./images/13rasm.png" alt="">
+                    <img src="./images/chiziqcha.png" alt="">
                     <div class="flex gap-[130px] pt-[25px]">
                         <p class="text-[#8F8F8F]">3 товара</p>
                         <h1 class="font-[200]">258,10 ₽</h1>
@@ -216,13 +237,13 @@
                             -8,01 ₽
                         </h1>
                     </div>
-                    <img src="./images/13rasm.png" alt="">
+                    <img src="./images/chiziqcha.png" alt="">
                     <div class="flex gap-[163px] pt-[30px]">
                         <p class="text-[#8F8F8F]">Итог</p>
                         <h1 class=" text-30px font-[500]">250,09 ₽</h1>
                     </div>
                     <div class="   flex items-center h-[30px]  gap-[10px] pt-[30px] pl-[20px]">
-                        <img src="./images/14rasm.png" alt="">
+                        <img src="./images/yarimaylana.png" alt="">
                         <p class="text-[green]">Вы получяете 100 бонусов</p>
                     </div>
                     <div>

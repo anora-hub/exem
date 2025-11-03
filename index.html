@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <header class="fixed w-[100%] flex top-0">
-        <div class=" container  mx-auto mt-[10px]  px-[20px]  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
+
+    <header class="fixed w-[100%] flex top-0  pb-[10px] z-10    bg-[white]">
+        <div
+            class=" container  mx-auto mt-[10px]    px-[20px] relative  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
             <img src="./images/rasm1.png" alt="">
             <h1 class="text-[27px] text-[black]">Северяночка</h1>
             <div class=" hidden xl:flex items-center gap-[30px]">
@@ -22,137 +24,72 @@
                         <span>Каталог</span>
                     </button>
                 </a>
-                <input type="text" placeholder="Найти товар"
-                    class="border border-green-500 rounded-lg px-10 py-2 w-64 outline-none  focus:ring-green-400 bg-[url('rasm.png')] bg-no-repeat bg-right-3 bg-center" />
-                <div>
-                    <img class="items-center" src="./images/rasm2.png" alt="">
-                    <h4>Избранное</h4>
+                <div class=" relative">
+                    <div
+                        class="flex items-center border border-green-300 rounded-lg px-10 py-2 bg-white max-w-[500px] w-full max-w-lg shadow-sm">
+                        <input id="input" type="text" placeholder="Найти товар"
+                            class="flex-1 outline-none text-sm text-gray-700 w-[400px]  placeholder-gray-400" />
+
+                    </div>
+                    <div id="search-cards"
+                        class="w-full hidden  overflow-y-scroll flex flex-col gap-[10px] top-[60px] absolute  max-h-[300px] bg-[white] shadow-lg rounded-[20px] p-[20px] ">
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="flex relative inline-block ml-[30px]  ">
+                    <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
+                    <p id="like-badge" class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">0</p>
+                    </div>
+                    <h4 id=" ">Избранное</h4>
                 </div>
                 <div>
-                    <img class="items-center" src="./images/rasm2.png" alt="">
+                    <img class="ml-[24px]" src="./images/kubik.png" alt="">
                     <h4>продукты</h4>
                 </div>
                 <div>
                     <a href="./karzinka.html">
-                        <img class="items-center" src="./images/rasm3.png" alt="">
+                        <div class=" flex relative inline-block ml-[10px] ">
+                            <img class="  object-cover rounded-lg   " src="./images/rasm3.png" alt="">
+                            <p id="badge" class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">0</p>
+                        </div>
                     </a>
                     <h4>Корзина</h4>
                 </div>
                 <img src="./images/rasm4.png" alt="">
                 <h1>Алексей</h1>
-                <h1>^</h1>
+                <img src="./images/chiziq.png" alt="">
             </div>
         </div>
     </header>
 
     <main>
-        <section class="bg-center flex items-center   bg-cover mt-[80px]"
+        <section class="bg-center flex items-center   bg-cover mt-[60px]"
             style="background-image: url('./images/katta\ rasm.png')   ">
             <div
                 class=" container  max-w-[1208px]  mx-auto flex-wrap  pb-[20px] px-[20px] flex justify-center items-center ">
                 <img class="pt-[20px] pb-[20px]" src="./images/img (5).png " alt="">
                 <h2 class="text-3xl font-bold text-gray-800">
-                    Доставка бесплатно от <span class="text-green-600">1000₽</span>
+                    Доставка бесплатно от 1000 ₽
                 </h2>
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
             <div class="container  max-w-[1208px]  mx-auto flex-wrap  px-[20px] pt-[20px] flex justify-between">
-                <h1 class="text-[30px]  text-[500] ">
+                <h1 class="text-[30px]  text-[600]  ">
                     Акции
                 </h1>
-                <h4 class="text-#757371">
-                    Все продукты >
-                </h4>
+                <div class=" flex items-center gap-[10px]">
+                    <h4 class="text-#757371">
+                        Все продукты
+                    </h4>
+                    <img src="./images/yana chiziq.png" alt="">
+                </div>
             </div>
         </section>
         <section class="bg-[#FBF8EC] pt-[30px] ">
             <div
-                class=" container  grid gap-[20px] sm:grid-cols-2  md:grid-cols-2 justify-center   lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto  ">
-                <div class=" container  max-w-[1208px]    mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/o1.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Г/Ц Блинчики с мясом вес, Россия</h1>
-                        <img class="p-[10px]" src="./images/rasm6.png" alt="">
-                        <button
-                            class=" text-[#70C05B] border text-[green]  border-green-500 max-w-[250px]   w-[270px] h-[30px] text-[black]   items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/02.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h1>
-                        <img class="p-[10px]" src="./images/rasm8.png" alt="">
-                        <button
-                            class=" text-[#70C05B]   border text-[green]  border-green-500  max-w-[250px]  w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/03.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h1>
-                        <img class="p-[10px]" src="./images/rasm10.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/04.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h1>
-                        <img class="p-[10px]" src="./images/rasm12.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
+                class=" cartlar container  grid gap-[20px] sm:grid-cols-2  md:grid-cols-2 justify-center   lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto  ">
+
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
@@ -167,91 +104,8 @@
         </section>
         <section class="bg-[#FBF8EC] pt-[30px] ">
             <div
-                class=" container grid gap-[20px]  sm:grid-cols-2  md:grid-cols-2 justify-center lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto   ">
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm13.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm14.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm15.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm16.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
+                class="cardla container grid gap-[20px]  sm:grid-cols-2  md:grid-cols-2 justify-center lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto   ">
+
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
@@ -266,104 +120,21 @@
         </section>
         <section class="bg-[#FBF8EC] pt-[30px] ">
             <div
-                class=" container gap-[20px] grid justify-center  sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto   justify-between">
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/shikalot.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm14.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/shikalot.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
-                <div class=" container  max-w-[1208px]  mx-auto  px-[20px]">
-                    <div class=" shadow-[5px 5px 10px] max-w-[272px]  bg-[white]">
-                        <img src="./images/rasm16.png" alt="">
-                        <div class="flex justify-between pt-[5px] items-center p-[10px]">
-                            <div>
-                                <h4>44,50₽</h4>
-                                <p class="text-[#606060]">С картой</p>
-                            </div>
-                            <div>
-                                <h4 class=" text-[#606060]">50,50₽</h4>
-                                <p class="text-[#606060]">Обычная</p>
-                            </div>
-                        </div>
-                        <h1 class="p-[10px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h1>
-                        <img class="p-[10px]" src="./images/yulduz.png" alt="">
-                        <button
-                            class=" text-[#70C05B]  border text-[green]  border-green-500 max-w-[250px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[#FF6633]  hover:text-[white]">
-                            В корзину
-                        </button>
-                    </div>
-                </div>
+                class=" card container gap-[20px] grid justify-center  sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  max-w-[1208px] mx-auto   justify-between">
+
             </div>
         </section>
-        <section class="bg-[#FBF8EC]">
+        <section class="bg-[#FBF8EC] pl-[20px]">
             <div class="container max-w-[1208px] mx-auto">
                 <h1 class=" text-[40px]">Специальные предложения</h1>
             </div>
         </section>
         <section class="bg-[#FBF8EC]">
             <div
-                class="container pt-[40px]  justify-center gap-[20px] grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1208px] mx-auto">
+                class="container pt-[40px] pl-[20px]  pr-[20px]  justify-center gap-[20px] grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1208px] mx-auto">
 
-                <div class=" flex justify-between  bg-[#FCD5BA] max-w-[548px]">
-                    <div class=" pt-[40px] pl-[10px]">
+                <div class=" flex justify-between items-center p-[30px] bg-[#FCD5BA] max-w-[548px]">
+                    <div class=" pl-[10px]">
                         <h1 class="text-[23px] font-[700]">Оформите карту «Северяночка»</h1>
                         <p>И получайте бонусы при покупке в магазинах и на сайте</p>
                     </div>
@@ -371,8 +142,8 @@
                         <img src="./images/rasm18.png" alt="">
                     </div>
                 </div>
-                <div class=" flex justify-between  bg-[#E5FFDE] max-w-[548px]">
-                    <div class=" pt-[40px] pl-[10px]">
+                <div class=" flex justify-between  bg-[#E5FFDE] p-[30px] items-center max-w-[548px]">
+                    <div class=" pl-[10px]">
                         <h1 class="text-[23px] font-[900]">Покупайте акционные товары</h1>
                         <p>И получайте вдвое больше бонусов
                         </p>
@@ -389,21 +160,21 @@
         <section class="bg-[#FBF8EC]">
             <div class="container  max-w-[1208px] mx-auto p-[10px]">
                 <h1 class=" text-[40px]">Наши магазины</h1>
-                <div class=" grid grid-cols-4 gap-[30px] flex-wrap">
+                <div class=" flex gap-[5px] flex-col sm:flex-row  ">
                     <button
-                        class="bg-green-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-green-700 active:scale-95 transition">
+                        class=" border w-[150px] h-[37px]  tex-[15px] text-[black]  bg-[#F3F2F1] w-[100px] rounded-[8px] border-[#F3F2F1]  hover:text-[white] hover:bg-[#70C05B] ">
                         п.Щельяюр
                     </button>
                     <button
-                        class="bg-green-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-green-700 active:scale-95 transition">
+                        class=" border w-[150px] h-[37px] tex-[15px] text-[black]  bg-[#F3F2F1] w-[100px] rounded-[8px] border-[#F3F2F1]  hover:text-[white] hover:bg-[#70C05B] ">
                         д.Вертеп
                     </button>
                     <button
-                        class="bg-green-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-green-700 active:scale-95 transition">
+                        class=" border w-[150px] h-[37px]  tex-[15px] text-[black]  bg-[#F3F2F1] w-[100px] rounded-[8px] border-[#F3F2F1]  hover:text-[white] hover:bg-[#70C05B] ">
                         с.Краснобор
                     </button>
                     <button
-                        class="bg-green-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-green-700 active:scale-95 transition">
+                        class=" border w-[150px] h-[37px] tex-[15px] text-[black]  bg-[#F3F2F1] w-[100px] rounded-[8px] border-[#F3F2F1]  hover:text-[white] hover:bg-[#70C05B] ">
                         д.Диюр
                     </button>
                 </div>
@@ -412,44 +183,50 @@
         </section>
         <section class="bg-[#FBF8EC]">
             <div
-                class="container grid lg:grid-cols-2  justify-center gap-[20px] xl:grid-cols-2 2xl:grid-cols-3 justify-between max-w-[1208px] mx-auto p-[10px] pt-[50px]">
-                <div class=" bg-[white] max-w-[376px]">
-                    <img src="./images/rasm21.png" alt="">
-                    <h4 class=" pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
-                    <h1 class="text-[21px] font-[500] pt-[5px]">Режим использования масок и перчаток на территории
+                class="container grid lg:grid-cols-2  justify-center gap-[40px] xl:grid-cols-2 2xl:grid-cols-3 justify-between max-w-[1208px] mx-auto p-[10px] pt-[50px]">
+                <div class=" bg-[white] max-w-[376px] h-[450px] ">
+                    <img class=" " src="./images/rasm21.png" alt="">
+                    <h4 class=" pl-[15px] pr-[15px]   pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
+                    <h1 class=" pl-[15px] pr-[15px] text-[19px] font-[500] pt-[10px] pb-[10px]">Режим использования
+                        масок и перчаток на территории
                         магазинов</h1>
-                    <p>Подробная информация о режимах использования масок и перчаток на территории магазинов
+                    <p class="pl-[15px] pr-[15px] pb-[18px]">Подробная информация о режимах использования масок и
+                        перчаток на территории магазинов
                         "ЛЕНТА". Информация обновляется
                         каждый будний день.</p>
                     <button
-                        class=" text-[green]  border ml-[30px] text-[#E5FFDE]  mt-[30px] rounded-lg border-#E5FFDE-500 max-w-[150px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[green]  hover:text-[white]">
+                        class=" ml-[15px] mr-[15px] border mt-[15px] w-[170px] h-[35px] bg-[#E5FFDE] border-[#E5FFDE] text-[#70C05B] rounded-[5px] hover:text-[white] hover:bg-[#70C05B] ">
                         Подробнее
                     </button>
 
 
                 </div>
-                <div class=" bg-[white] max-w-[376px]">
+                <div class=" bg-[white] max-w-[376px] h-[450px]">
                     <img src="./images/rasm22.png" alt="">
-                    <h4 class=" pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
-                    <h1 class="text-[21px] font-[500] pt-[5px]">Весеннее настроение для каждой</h1>
-                    <p>8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и
+                    <h4 class="pl-[15px] pr-[15px]  pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
+                    <h1 class=" pl-[15px] pr-[15px]   text-[21px] font-[500] pt-[10px]">Весеннее настроение для каждой
+                    </h1>
+                    <p class=" pl-[15px] pr-[15px] pt-[8px] pb-[44px] ">8 Марта – это не просто Международный женский
+                        день, это ещё день тюльпанов, приятных сюрпризов и
                         праздничных тёплых
                         пожеланий.</p>
                     <button
-                        class=" text-[green] ml-[30px] border text-[#E5FFDE]  mt-[80px] rounded-lg text-[#E5FFDE] border-#E5FFDE-500 max-w-[150px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[green]  hover:text-[white]">
+                        class=" ml-[15px] mr-[15px] border mt-[15px] w-[170px] h-[35px] bg-[#E5FFDE] border-[#E5FFDE] text-[#70C05B] rounded-[5px] hover:text-[white] hover:bg-[#70C05B] ">
                         Подробнее
                     </button>
 
                 </div>
-                <div class=" bg-[white] max-w-[376px]">
+                <div class=" bg-[white] max-w-[376px] h-[450px]  ">
                     <img src="./images/rasm23.png" alt="">
-                    <h4 class=" pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
-                    <h1 class="text-[21px] font-[500] pt-[5px]">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h1>
-                    <p>Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте
+                    <h4 class=" pl-[15px] pr-[15px]   pt-[5px] text-[#8F8F8F]">05.03.2021</h4>
+                    <h1 class=" pl-[15px] pr-[15px]   text-[21px] font-[500] pt-[10px] pb-[10px]">ЗОЖ или ФАСТФУД. А вы
+                        на чьей стороне? Голосуем!</h1>
+                    <p class=" pl-[15px] pr-[15px]  pb-[20px]">Голосуйте за любимые категории, выбирайте
+                        категорию-победителя в мобильном приложении и получайте
                         кешбэк 10% баллами в
                         апреле!</p>
                     <button
-                        class=" text-[green]  ml-[30px] border text-[#E5FFDE]  mt-[50px] rounded-lg border-#E5FFDE-500 max-w-[150px] w-[270px] h-[30px] text-[black] items-center justify-center hover:bg-[green]  hover:text-[white]">
+                        class=" ml-[15px] mr-[15px] border mt-[15px] w-[170px] h-[35px] bg-[#E5FFDE] border-[#E5FFDE] text-[#70C05B] rounded-[5px] hover:text-[white] hover:bg-[#70C05B] ">
                         Подробнее
                     </button>
 
@@ -458,7 +235,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class=" bg-[white] pt-[20px] pb-[20px]">
         <div class=" container max-w-[1208px] mx-auto    flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-600">
                 <img src="./images/rasm1.png" alt="Logo" class="w-12 h-12 object-contain">
@@ -484,6 +261,9 @@
 
     </footer>
 
+    <script src="./products-data/products-data.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
