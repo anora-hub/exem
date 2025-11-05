@@ -1,16 +1,19 @@
 let cartlar = document.querySelector(".cartlar");
 let cardla = document.querySelector(".cardla");
 let card = document.querySelector(".card");
-let loading = document.getElementById(".loading");
+let loading = document.getElementById("loading");
 let carts = JSON.parse(localStorage.getItem("carts") || "[]")
 let like  = JSON.parse(localStorage.getItem("likes") || "[]")
-localStorage.setItem("carts", JSON.stringify(carts));
-let badge = document.getElementById("badge")
-badge.textContent = carts.length
 let likebadge = document.getElementById("like-badge")
+
+let badge = document.getElementById("badge")
+
+localStorage.setItem("carts", JSON.stringify(carts));
 localStorage.setItem("likes", JSON.stringify(like));
 
 likebadge.textContent = like.length
+ 
+badge.textContent = carts.length
 
 
 

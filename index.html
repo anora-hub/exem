@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <div id="loading" class="fixed z-1 w-full h-full  bg-black flex items-center justify-center top-0">
+        <img src="./assets/images/loading/loading.svg" alt="">
+    </div>
 
     <header class="fixed w-[100%] flex top-0  pb-[10px] z-10    bg-[white]">
         <div
-            class=" container  mx-auto mt-[10px]    px-[20px] relative  flex  items-center  text-around  max-w-[1208px]  gap-[30px] ">
+            class=" container  mx-auto   max-w-[1208px]  mt-[10px]    px-[20px] relative  flex  items-center  text-around  gap-[30px] ">
             <img src="./images/rasm1.png" alt="">
             <h1 class="text-[27px] text-[black]">Северяночка</h1>
             <div class=" hidden xl:flex items-center gap-[30px]">
@@ -37,8 +40,10 @@
                 </div>
                 <div class=" ">
                     <div class="flex relative inline-block ml-[30px]  ">
-                    <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
-                    <p id="like-badge" class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">0</p>
+                        <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
+                        <p id="like-badge"
+                            class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                            0</p>
                     </div>
                     <h4 id=" ">Избранное</h4>
                 </div>
@@ -50,7 +55,9 @@
                     <a href="./karzinka.html">
                         <div class=" flex relative inline-block ml-[10px] ">
                             <img class="  object-cover rounded-lg   " src="./images/rasm3.png" alt="">
-                            <p id="badge" class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">0</p>
+                            <p id="badge"
+                                class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                                0</p>
                         </div>
                     </a>
                     <h4>Корзина</h4>
@@ -260,6 +267,45 @@
 
 
     </footer>
+       
+    <footer>
+        <div class="  container  mx-auto   max-w-[1208px]  flex justify-between items-center pr-[20px] pl-[20px] bg-[white] ">
+            <div>
+                <img width="40px" height="40px"
+                    src="data:image/png;base64,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"
+                    alt="">
+                <p>Каталог</p>
+            </div>
+            <div class=" ">
+                <div class="flex relative inline-block ml-[30px]  ">
+                    <img class="object-cover rounded-lg  " src="./images/rasm2.png" alt="">
+                    <p id="like-badge"
+                        class=" absolute -top-2 -right-3 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                        0</p>
+                </div>
+                <h4 id=" ">Избранное</h4>
+            </div>
+            <div>
+                <img class="ml-[24px]" src="./images/kubik.png" alt="">
+                <h4>продукты</h4>
+            </div>
+            <div>
+                <a href="./karzinka.html">
+                    <div class=" flex relative inline-block ml-[10px] ">
+                        <img class="  object-cover rounded-lg   " src="./images/rasm3.png" alt="">
+                        <p id="badge"
+                            class=" absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full shadow ">
+                            0</p>
+                    </div>
+                </a>
+                <h4>Корзина</h4>
+            </div>
+            <img src="./images/rasm4.png" alt="">
+
+        </div>
+    </footer>
+
+
 
     <script src="./products-data/products-data.js"></script>
     <script src="./js/search.js"></script>
